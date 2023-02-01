@@ -4,7 +4,7 @@
 This is a real estate project developed using Python Django framework. The project aims to create a platform for managing and listing properties for sale or rent. It provides a user-friendly interface for both real estate agents and customers to interact and transact.
 
 
-## Features
+## Features.
 - User authentication and authorization
 - Property listing and management
 - Search and filtering properties based on location, type, and price range
