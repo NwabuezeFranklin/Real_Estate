@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<a href="/add-listing/" class="text-blue-500">Create a new listing</a>
+<h3><a href="/add-listing/" class="text-blue-500">CREATE</a></h3>
 
 {% for listing in listings %}
 
@@ -10,7 +10,13 @@
     <h3 class="text-3xl text-gray-900">{{ listing.title }}</h3>
     <img src="{{ listing.image.url }}" alt="" />
     <a href="/listings/{{ listing.id }}/" class="text-blue-500">
-        View details
+        READ
+    </a>
+    <a href="/listings/{{ listing.id }}/edit" class="text-blue-500">
+        UPDATE
+    </a>
+    <a href="/listings/{{ listing.id }}/delete" class="text-blue-500">
+        DELETE
     </a>
 </div>
 
