@@ -35,6 +35,7 @@ def listing_create(request):
     return render(request, "listing_create.html", context)
 
 
+
 def listing_update(request, pk):
     listing = Listing.objects.get(id=pk)
     form = ListingForm(instance=listing)
