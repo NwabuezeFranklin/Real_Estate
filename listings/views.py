@@ -2,8 +2,9 @@ from django.shortcuts import render, redirect
 from .models import Listing
 from .forms import ListingForm
 
-# CRUD - create, retrieve, update, delete, list
 
+
+# CRUD - create, retrieve, update, delete, list
 
 def listing_list(request):
     listings = Listing.objects.all()
